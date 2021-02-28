@@ -1,0 +1,133 @@
+voer dit in https://flowchart.js.org:
+op2332971353856=>operation: from sudoku import Sudoku
+st2332972930048=>start: start main
+io2332971165536=>inputoutput: input:
+sub2332975265344=>subroutine: print('-----------{ SUDOKU SOLVER }-----------\n(Voer AUB elke rij zo in: "012345678")\n')
+op2332975265392=>operation: board = [[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0]]
+op2332975265440=>operation: rij0 = input('Voer hier het eerste rij in:  ')
+op2332975265488=>operation: rij0String = str(rij0)
+op2332975265536=>operation: rij0Map = map(int, rij0String)
+op2332975265584=>operation: rij0List = list(rij0Map)
+op2332975265632=>operation: board[0] = list(rij0List)
+op2332975265680=>operation: rij1 = input('Voer hier het tweede rij in:  ')
+op2332975265728=>operation: rij1String = str(rij1)
+op2332975265776=>operation: rij1Map = map(int, rij1String)
+op2332975265824=>operation: rij1List = list(rij1Map)
+op2332975265872=>operation: board[1] = list(rij1List)
+op2332975265920=>operation: rij2 = input('Voer hier het derde rij in:   ')
+op2332975265968=>operation: rij2String = str(rij2)
+op2332975266016=>operation: rij2Map = map(int, rij2String)
+op2332975266064=>operation: rij2List = list(rij2Map)
+op2332975266112=>operation: board[2] = list(rij2List)
+op2332975266160=>operation: rij3 = input('Voer hier het vierde rij in:  ')
+op2332975266208=>operation: rij3String = str(rij3)
+op2332975266256=>operation: rij3Map = map(int, rij3String)
+op2332975278784=>operation: rij3List = list(rij3Map)
+op2332975278832=>operation: board[3] = list(rij3List)
+op2332975278880=>operation: rij4 = input('Voer hier het vijfde rij in:  ')
+op2332975278928=>operation: rij4String = str(rij4)
+op2332975278976=>operation: rij4Map = map(int, rij4String)
+op2332975279024=>operation: rij4List = list(rij4Map)
+op2332975279072=>operation: board[4] = list(rij4List)
+op2332975279120=>operation: rij5 = input('Voer hier het zesde rij in:   ')
+op2332975279216=>operation: rij5String = str(rij5)
+op2332975279264=>operation: rij5Map = map(int, rij5String)
+op2332975279312=>operation: rij5List = list(rij5Map)
+op2332975279360=>operation: board[5] = list(rij5List)
+op2332975279408=>operation: rij6 = input('Voer hier het zevende rij in: ')
+op2332975279456=>operation: rij6String = str(rij6)
+op2332975279504=>operation: rij6Map = map(int, rij6String)
+op2332975279552=>operation: rij6List = list(rij6Map)
+op2332975279600=>operation: board[6] = list(rij6List)
+op2332975279648=>operation: rij7 = input('Voer hier het achtste rij in: ')
+op2332975279696=>operation: rij7String = str(rij7)
+op2332975279744=>operation: rij7Map = map(int, rij7String)
+op2332975279792=>operation: rij7List = list(rij7Map)
+op2332975279840=>operation: board[7] = list(rij7List)
+op2332975279888=>operation: rij8 = input('Voer hier het negende rij in: ')
+op2332975279984=>operation: rij8String = str(rij8)
+op2332975280032=>operation: rij8Map = map(int, rij8String)
+op2332975280080=>operation: rij8List = list(rij8Map)
+op2332975284288=>operation: board[8] = list(rij8List)
+op2332975284336=>operation: puzzle = Sudoku(3, 3, board=board)
+sub2332975284384=>subroutine: print('Dit is jou puzzel:')
+sub2332975284432=>subroutine: print(puzzle)
+op2332975284480=>operation: zekerWeten = input('Weet je zeker dat je de sudoku goed hebt ingevoerd? (j/n) ').lower()
+cond2332975284576=>condition: if (zekerWeten == 'j')
+op2332975284720=>operation: solution = Sudoku(3, 3, board=board).solve()
+sub2332975284768=>subroutine: print(solution)
+op2332975284624=>operation: opnieuw = input('Wil je opnieuw beginnen? (j/n)').lower()
+cond2332975285056=>condition: if (opnieuw == 'j')
+sub2332975285200=>subroutine: main()
+e2332975163712=>end: end main
+sub2332975162224=>subroutine: main()
+sub2332975285296=>subroutine: exit()
+sub2332975284912=>subroutine: print('Probeer opnieuw:')
+sub2332975284960=>subroutine: main()
+
+op2332971353856->st2332972930048
+st2332972930048->io2332971165536
+io2332971165536->sub2332975265344
+sub2332975265344->op2332975265392
+op2332975265392->op2332975265440
+op2332975265440->op2332975265488
+op2332975265488->op2332975265536
+op2332975265536->op2332975265584
+op2332975265584->op2332975265632
+op2332975265632->op2332975265680
+op2332975265680->op2332975265728
+op2332975265728->op2332975265776
+op2332975265776->op2332975265824
+op2332975265824->op2332975265872
+op2332975265872->op2332975265920
+op2332975265920->op2332975265968
+op2332975265968->op2332975266016
+op2332975266016->op2332975266064
+op2332975266064->op2332975266112
+op2332975266112->op2332975266160
+op2332975266160->op2332975266208
+op2332975266208->op2332975266256
+op2332975266256->op2332975278784
+op2332975278784->op2332975278832
+op2332975278832->op2332975278880
+op2332975278880->op2332975278928
+op2332975278928->op2332975278976
+op2332975278976->op2332975279024
+op2332975279024->op2332975279072
+op2332975279072->op2332975279120
+op2332975279120->op2332975279216
+op2332975279216->op2332975279264
+op2332975279264->op2332975279312
+op2332975279312->op2332975279360
+op2332975279360->op2332975279408
+op2332975279408->op2332975279456
+op2332975279456->op2332975279504
+op2332975279504->op2332975279552
+op2332975279552->op2332975279600
+op2332975279600->op2332975279648
+op2332975279648->op2332975279696
+op2332975279696->op2332975279744
+op2332975279744->op2332975279792
+op2332975279792->op2332975279840
+op2332975279840->op2332975279888
+op2332975279888->op2332975279984
+op2332975279984->op2332975280032
+op2332975280032->op2332975280080
+op2332975280080->op2332975284288
+op2332975284288->op2332975284336
+op2332975284336->sub2332975284384
+sub2332975284384->sub2332975284432
+sub2332975284432->op2332975284480
+op2332975284480->cond2332975284576
+cond2332975284576(yes)->op2332975284720
+op2332975284720->sub2332975284768
+sub2332975284768->op2332975284624
+op2332975284624->cond2332975285056
+cond2332975285056(yes)->sub2332975285200
+sub2332975285200->e2332975163712
+e2332975163712->sub2332975162224
+cond2332975285056(no)->sub2332975285296
+sub2332975285296->e2332975163712
+cond2332975284576(no)->sub2332975284912
+sub2332975284912->sub2332975284960
+sub2332975284960->op2332975284624
